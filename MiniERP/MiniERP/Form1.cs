@@ -15,9 +15,14 @@ namespace MiniERP
         public Form1()
         {
             InitializeComponent();
-            PenalOff();
+            PenalOff();             //  모든 패널 off
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Enroll_Click(object sender, EventArgs e)
         {
             MenuPenalAble(sender);

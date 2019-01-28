@@ -48,7 +48,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -228,7 +228,7 @@
             this.panel_Enroll.Controls.Add(this.button9);
             this.panel_Enroll.Controls.Add(this.button8);
             this.panel_Enroll.Controls.Add(this.button7);
-            this.panel_Enroll.Controls.Add(this.button1);
+            this.panel_Enroll.Controls.Add(this.btn);
             this.panel_Enroll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Enroll.Location = new System.Drawing.Point(0, 0);
             this.panel_Enroll.Name = "panel_Enroll";
@@ -280,14 +280,14 @@
             this.button7.Text = "창고 등록";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn
             // 
-            this.button1.Location = new System.Drawing.Point(3, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(223, 28);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "거래처 등록";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn.Location = new System.Drawing.Point(3, 90);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(223, 28);
+            this.btn.TabIndex = 0;
+            this.btn.Text = "거래처 등록";
+            this.btn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -335,7 +335,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn;
     }
 }
 

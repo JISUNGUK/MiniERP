@@ -49,6 +49,17 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Bom = new System.Windows.Forms.TabPage();
+            this.BomGridview = new System.Windows.Forms.DataGridView();
+            this.export = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.search = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Allchecked = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -61,6 +72,12 @@
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.panel_Enroll.SuspendLayout();
+            this.Bom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BomGridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer2
@@ -109,6 +126,7 @@
             // 
             this.tabMenu.Controls.Add(this.tabPage3);
             this.tabMenu.Controls.Add(this.tabPage4);
+            this.tabMenu.Controls.Add(this.Bom);
             this.tabMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabMenu.Location = new System.Drawing.Point(0, 0);
             this.tabMenu.Name = "tabMenu";
@@ -289,6 +307,122 @@
             this.button1.Text = "거래처 등록";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // Bom
+            // 
+            this.Bom.Controls.Add(this.splitContainer1);
+            this.Bom.Location = new System.Drawing.Point(4, 22);
+            this.Bom.Name = "Bom";
+            this.Bom.Size = new System.Drawing.Size(477, 477);
+            this.Bom.TabIndex = 2;
+            this.Bom.Text = "BOM";
+            this.Bom.UseVisualStyleBackColor = true;
+            // 
+            // BomGridview
+            // 
+            this.BomGridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BomGridview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BomGridview.Location = new System.Drawing.Point(0, 0);
+            this.BomGridview.Name = "BomGridview";
+            this.BomGridview.RowTemplate.Height = 23;
+            this.BomGridview.Size = new System.Drawing.Size(473, 406);
+            this.BomGridview.TabIndex = 0;
+            this.BomGridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BomGridview_CellClick);
+            // 
+            // export
+            // 
+            this.export.Location = new System.Drawing.Point(395, 5);
+            this.export.Name = "export";
+            this.export.Size = new System.Drawing.Size(75, 23);
+            this.export.TabIndex = 8;
+            this.export.Text = "증명서출력";
+            this.export.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(254, 5);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 7;
+            this.button12.Text = "삭제";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(129, 5);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(75, 23);
+            this.button13.TabIndex = 6;
+            this.button13.Text = "수정";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(24, 5);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 23);
+            this.button14.TabIndex = 5;
+            this.button14.Text = "등록";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Location = new System.Drawing.Point(4, 3);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.Allchecked);
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
+            this.splitContainer1.Panel1.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.search);
+            this.splitContainer1.Panel1.Controls.Add(this.button14);
+            this.splitContainer1.Panel1.Controls.Add(this.export);
+            this.splitContainer1.Panel1.Controls.Add(this.button13);
+            this.splitContainer1.Panel1.Controls.Add(this.button12);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.BomGridview);
+            this.splitContainer1.Size = new System.Drawing.Size(473, 474);
+            this.splitContainer1.SplitterDistance = 64;
+            this.splitContainer1.TabIndex = 9;
+            // 
+            // search
+            // 
+            this.search.Location = new System.Drawing.Point(395, 34);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(75, 23);
+            this.search.TabIndex = 10;
+            this.search.Text = "검색";
+            this.search.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(201, 34);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(128, 21);
+            this.textBox1.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(127, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "상품명";
+            // 
+            // Allchecked
+            // 
+            this.Allchecked.AutoSize = true;
+            this.Allchecked.Location = new System.Drawing.Point(24, 34);
+            this.Allchecked.Name = "Allchecked";
+            this.Allchecked.Size = new System.Drawing.Size(72, 16);
+            this.Allchecked.TabIndex = 13;
+            this.Allchecked.Text = "제품전체";
+            this.Allchecked.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -309,6 +443,13 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.panel_Enroll.ResumeLayout(false);
+            this.Bom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BomGridview)).EndInit();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -336,6 +477,17 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabPage Bom;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.CheckBox Allchecked;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button search;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button export;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.DataGridView BomGridview;
     }
 }
 

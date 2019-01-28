@@ -42,5 +42,12 @@ namespace MiniERP
         {
             panel_Enroll.Visible = false;
         }
+
+        private void BomGridview_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Bomtree bt = new Bomtree();
+            bt.MdiParent = this;
+            bt.Show();
+        }
     }
 }

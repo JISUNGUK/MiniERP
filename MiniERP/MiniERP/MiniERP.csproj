@@ -47,18 +47,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bom.cs" />
     <Compile Include="Business.cs" />
+    <Compile Include="Clerk.cs" />
     <Compile Include="DBConnection.cs" />
+    <Compile Include="Distribution.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="Manufacture.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleOrder.cs" />
+    <Compile Include="Stock.cs" />
+    <Compile Include="Trade.cs" />
+    <Compile Include="Warehouse.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
